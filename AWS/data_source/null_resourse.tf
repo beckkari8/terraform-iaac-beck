@@ -1,4 +1,4 @@
-resource "null_resourse" "commands_to_run" {
+resource "null_resource" "commands_to_run" {
 
   # BOOTSTRAPPING
   provisioner "remote-exec" {
@@ -25,7 +25,7 @@ resource "null_resourse" "commands_to_run" {
     }
 
     source      = "file"            //file location   
-    destination = "/etc/yum.repo.d" //destination folder
+    destination = "/home/centos/" //destination folder
   }
 
   provisioner "remote-exec" {
@@ -35,6 +35,6 @@ resource "null_resourse" "commands_to_run" {
       private_key = "${file("~/.ssh/id_rsa")}"
       host        = "${aws_instance.centos.public_ip}"
     }
-    scripts = ["${file(script1)}"] // script location
+    scripts = ["${file("script1.sh")}"]            // script location
   }
 }
