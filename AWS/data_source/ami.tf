@@ -42,5 +42,5 @@ provisioner "remote-exec" {
   }
 }
 output "centos" {
-  value = "${data.aws_ami.centos.id}"
+  value = "${data.aws_ami.centos.id} ${aws_instance.centos.public_ip}"
 }
