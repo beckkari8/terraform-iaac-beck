@@ -1,7 +1,7 @@
 output "name" {
-    value = "Bektur"
+  value = "Bektur"
 }
 
 output "lastname" {
-    value = "Karimov"
+  value = "Karimov"
 }

@@ -6,25 +6,25 @@ resource "aws_instance" "web" {
   }
 }
 
-  output "instance_id"{
-      value ="${aws_instance.web.id}"
-  }
+output "instance_id" {
+  value = "${aws_instance.web.id}"
+}
 
 
 
-  output "instance_Arn"{
-      value ="${aws_instance.web.arn}"
-  }
+output "instance_Arn" {
+  value = "${aws_instance.web.arn}"
+}
 
 
 
-  output "instance_IP"{
-      value ="${aws_instance.web.public_ip}"
-  }
+output "instance_IP" {
+  value = "${aws_instance.web.public_ip}"
+}
 
 
 
-  output "instance_AZ"{
-      value ="${aws_instance.web.availability_zone}"
-  }
+output "instance_AZ" {
+  value = "${aws_instance.web.availability_zone}"
+}
 

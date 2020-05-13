@@ -9,7 +9,7 @@ resource "aws_subnet" "private2" {
 }
 
 resource "aws_subnet" "private1" {
-    count = 3
+  count      = 3
   vpc_id     = "${aws_vpc.main.id}"
   cidr_block = "10.0.1.0/24"
 }
