@@ -1,7 +1,7 @@
-environment = "Dev" 
-s3_bucket = "sdlc-beck-dev" #Will be used to set backend.tf 
+environment = "QA" 
+s3_bucket = "sdlc-beck-qa" #Will be used to set backend.tf 
 s3_folder_project = "vet" #Will be used to set backend.tf 
-s3_folder_region = "us-east-1" #Will be used to set backend.tf 
+s3_folder_region = "us-east-2" #Will be used to set backend.tf 
 s3_folder_type = "sharedtools" #Will be used to set backend.tf 
 s3_tfstate_file = "infrastructure.tfstate" #Will be used to set backend.tf 
 
@@ -12,5 +12,5 @@ s3_tfstate_file = "infrastructure.tfstate" #Will be used to set backend.tf
   private_cidr2 = "10.0.102.0/24"
   private_cidr3 = "10.0.103.0/24"
 
-region = "us-east-1"
-Team = "Development"
+region = "us-east-2"
+Team = "Quality Assurance"
